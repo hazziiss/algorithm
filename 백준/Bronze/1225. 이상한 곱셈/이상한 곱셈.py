@@ -1,13 +1,8 @@
 import sys
 a_str, b_str = sys.stdin.readline().split()
 
-li_a = list(a_str)
-li_b = list(b_str)
+li_a = list(map(int,a_str))
+# print(li_a)
+li_b = list(map(int,b_str))
 
-summ = 0
-
-for i in li_a :
-    for j in li_b :
-        summ += int(i) * int(j)
-
-print (summ)
+print (sum(li_a)*sum(li_b))
